@@ -56,11 +56,17 @@
 
 @media only all and (max-width: 576px) { .copyright { font-size: 14px; } }
 
+@media all, bookshop { /* blur */ }
+
+@media all and (min-width: 1024px), bookshop and (min-width: 1024px) { .c-header { -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); } }
+
+@media all and (max-width: 576px), bookshop and (max-width: 576px) { .c-header { background: rgba(24, 37, 73, 0.5); } }
+
 @media all, bookshop { /* Header */ .c-header { height: auto; transition: all 0.35s; } .c-header__inner { position: relative; display: flex; align-items: center; width: 100%; padding: 25px 10px 20px; min-height: 80px; } }
 
 @media only all and (max-width: 1024px) { .c-header__inner { align-items: baseline; } }
 
-@media only all and (max-width: 576px) { .c-header__inner { padding: 30px 10px; } }
+@media only all and (max-width: 576px) { .c-header__inner { padding: 15px 10px; } }
 
 @media all, bookshop { /* Logo */ .logo__link { font-family: "Sahel VF", Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 21px; line-height: 26px; letter-spacing: -1px; font-weight: 900; text-transform: uppercase; } .logo__link:hover { color: #D8E1FC; } .logo__image { max-height: 50px; } /* Nav */ .main-nav { display: flex; align-items: center; width: 100%; margin-left: 100px; } .main-nav .social { margin-left: auto; } .main-nav .social .social__link { font-size: 18px; vertical-align: middle; } }
 
