@@ -1,0 +1,122 @@
+/* Imports */
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('Fonts/fonts/webfonts/Vazirmatn[wght].woff2') format('woff2 supports variations'),
+         url('Fonts/fonts/webfonts/Vazirmatn[wght].woff2') format('woff2-variations'),
+         url('Fonts/fonts/variable/Vazirmatn[wght].ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-style: normal;
+  }
+/* General Styling */
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: inherit;
+}
+:root {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+  
+}
+body {  
+    font-family: "Vazirmatn", sans-serif;
+    font-size: 3vmin;
+    font-variation-settings: "wght" 900;
+    color: #fff;
+    background-color: #000;
+}
+h1 {
+line-height: normal;
+ }
+
+/* Class */
+.center {
+    text-align: center;
+  }
+.bg1 {
+    background-image: url(svg/bg1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 100vh;
+    padding: 1vmin;
+}
+.mt2vw {
+margin-top: 2vmin;
+}
+.div {
+    width: 80vmin;
+    margin: auto;
+    margin-top: 2vmin;
+}
+
+.btntop {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    width: 34vmin;
+    font-size: 1.5vmin;
+    font-variation-settings: "wght" 500;    display: grid;
+    grid-template-columns: 40% 15% 15%;
+    gap: 2vmin;
+    justify-content: center;
+}
+
+.btntopd {
+    height: 5vmin;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100vh;
+    border: 1px rgba(255, 255, 255, 0.25) solid;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
+    color: #fff;
+    
+}
+
+.btntopd:hover {
+    border: 1px #4169E1 solid;
+    background-color: rgba(64, 104, 224, 0.151);
+    backdrop-filter: blur(25px);
+    color: #fff;
+    transition: background-color 0.5s, border 0.5s;
+}
+
+/* ID */
+#logo-bg {
+    background-image: url(svg/square-neon.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20vmin;
+}
+#logo {
+    background-image: url(logo.svg);
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20vmin;
+}
+#nameg {
+    background: #4169E1;
+    background: -webkit-linear-gradient(to bottom left, #4169E1 25%, #9244E1 100%);
+    background: -moz-linear-gradient(to bottom left, #4169E1 25%, #9244E1 100%);
+    background: linear-gradient(to bottom left, #4169E1 25%, #9244E1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-variation-settings: "wght" 250;
+    font-size: 5.5vmin;
+}
+ #erpa {
+    background-color: #fff;
+    color: #000;
+
+ }
+ #erpa:hover {
+    -webkit-box-shadow: 5px 5px 25px 0px #9244E1, -5px -5px 25px 0px #4169E1;
+    box-shadow: 5px 5px 25px 0px #9244E1, -5px -5px 25px 0px #4169E1;
+    transition: -webkit-box-shadow 0.5s, box-shadow 0.5s;
+}
