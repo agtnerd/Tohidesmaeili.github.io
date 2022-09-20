@@ -14,9 +14,7 @@
 }
 :root {
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-display: swap
-  
+    -moz-osx-font-smoothing: grayscale;  
 }
 body {  
     font-family: "Vazirmatn", sans-serif;
@@ -32,6 +30,7 @@ line-height: normal;
 /* Class */
 .center {
     text-align: center;
+    font-display: swap;
   }
 .bg1 {
     background-image: url(svg/bg1.svg);
