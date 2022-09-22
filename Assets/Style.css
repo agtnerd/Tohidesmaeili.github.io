@@ -6,11 +6,12 @@
          url('Fonts/fonts/variable/Vazirmatn[wght].ttf') format('truetype-variations');
     font-weight: 100 900;
     font-style: normal;
+    font-display: swap;
   }
 /* General Styling */
 * {
     box-sizing: border-box;
-    -webkit-font-smoothing: inherit;
+    -webkit-font-smoothing: antialiased;
 }
 :root {
     -webkit-font-smoothing: antialiased;
@@ -19,6 +20,7 @@
 body {  
     font-family: "Vazirmatn", sans-serif;
     font-size: 3vmin;
+    font-display: swap;
     font-variation-settings: "wght" 900;
     color: #fff;
     background-color: #000;
@@ -28,25 +30,41 @@ line-height: normal;
  }
 
 /* Class */
+
+ 
+
 .center {
     text-align: center;
-    font-display: swap;
   }
 .bg1 {
-    background-image: url(svg/bg1.svg);
-    background-size: cover;
+        background-image: url(svg/bg1.svg);
+    background-size: 150vw;
+    background-repeat:no-repeat;
+    background-position: top;
+}
+.bg2 {
+    background-image: url(svg/bg2.svg);
+    background-size: 150vw;
     background-repeat: no-repeat;
-    background-position:center;
-    height: 100vh;
-    padding: 1vmin;
+    background-position: top;
 }
 .mt2vw {
 margin-top: 2vmin;
 }
+.mt20vmin {
+    margin-top: 20vmin;
+    }
+.mt30vmin {
+    margin-top: 30vmin;
+    }
 .div {
     width: 80vmin;
     margin: auto;
     margin-top: 2vmin;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
 }
 
 .btntop {
@@ -73,7 +91,8 @@ margin-top: 2vmin;
     background-color: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(20px);
     color: #fff;
-    
+    transition: background-color 0.5s, border 0.5s;
+
 }
 
 .btntopd:hover {
@@ -81,8 +100,20 @@ margin-top: 2vmin;
     background-color: rgba(64, 104, 224, 0.151);
     backdrop-filter: blur(25px);
     color: #fff;
-    transition: background-color 0.5s, border 0.5s;
 }
+
+.works {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+ 
+
+
+
+  
 
 /* ID */
 #logo-bg {
@@ -99,7 +130,26 @@ margin-top: 2vmin;
     background-position: center;
     height: 20vmin;
 }
-#nameg {
+
+.name{
+    color: #FFF;
+    transition: all 1s;
+}
+.name:hover {
+    color: #FFFFFF;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #4169E1, 0 0 30px #4169E1, 0 0 40px #4169E1, 0 0 55px #4169E1, 0 0 75px #4169E1;
+}
+ #erpa {
+    background-color: #fff;
+    color: #000;
+    transition: -webkit-box-shadow 0.5s, box-shadow 0.5s, border 1s;
+ }
+ #erpa:hover {
+    -webkit-box-shadow: 5px 5px 25px 0px #9244E1, -5px -5px 25px 0px #4169E1;
+    box-shadow: 5px 5px 25px 0px #9244E1, -5px -5px 25px 0px #4169E1;
+}
+ 
+.tag {
     background: #4169E1;
     background: -webkit-linear-gradient(to bottom left, #4169E1 25%, #9244E1 100%);
     background: -moz-linear-gradient(to bottom left, #4169E1 25%, #9244E1 100%);
@@ -109,14 +159,9 @@ margin-top: 2vmin;
     -webkit-text-fill-color: transparent;
     font-variation-settings: "wght" 250;
     font-size: 5.5vmin;
+    transition: all 1s;
 }
- #erpa {
-    background-color: #fff;
-    color: #000;
 
- }
- #erpa:hover {
-    -webkit-box-shadow: 5px 5px 25px 0px #9244E1, -5px -5px 25px 0px #4169E1;
-    box-shadow: 5px 5px 25px 0px #9244E1, -5px -5px 25px 0px #4169E1;
-    transition: -webkit-box-shadow 0.5s, box-shadow 0.5s;
-}
+.tag:hover {
+    color: #FFFFFF;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #4169E1, 0 0 30px #4169E1, 0 0 40px #4169E1, 0 0 55px #4169E1, 0 0 75px #4169E1;}
