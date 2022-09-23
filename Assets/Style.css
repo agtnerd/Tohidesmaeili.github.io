@@ -22,10 +22,10 @@
     border-radius: 100px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #000000;
+    background: #9244E1;
   }
   ::-webkit-scrollbar-thumb:active {
-    background: #000000;
+    background: #ffffff;
   }
   ::-webkit-scrollbar-track {
     background: #000000;
@@ -65,17 +65,20 @@ line-height: normal;
     text-align: center;
   }
 .bg1 {
-        background-image: url(svg/bg1.svg);
+    background-image: url(svg/bg1.svg);
     background-size:200vh;
     background-repeat:no-repeat;
     background-position: top;
 }
 .bg2 {
     background-image: url(svg/bg2.svg);
-    background-size: 100vh;
+    background-size: 200vh;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
+    margin:-45vmax auto 0 auto;
+    padding:45vmax 0 0 0;
 }
+
 .mt2vw {
 margin-top: 2vmin;
 }
@@ -86,9 +89,8 @@ margin-top: 2vmin;
     margin-top: 30vmin;
     }
 .div {
-    width: 80vmin;
+    width: 80vw;
     margin: auto;
-    margin-top: 2vmin;
     display: flex;
     align-items: center; 
     justify-content: center;
@@ -98,14 +100,13 @@ margin-top: 2vmin;
 header {
 position: fixed;
 bottom: 2vh;
+right: 0;
+left: 0;
 z-index: 999;
+
 }
 
 .btntop {
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-    text-align: center;
     width: 80vw;
     font-size: 4vw;
     font-variation-settings: "wght" 500;    
@@ -115,7 +116,7 @@ z-index: 999;
     justify-content: center;
 }
 
-.btntopd {
+.headerd {
     height: 12vw;
     display: inline-flex;
     align-items: center;
@@ -123,16 +124,16 @@ z-index: 999;
     border-radius: 100vh;
     border: 1px rgba(255, 255, 255, 0.25) solid;
     background-color: rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     color: #fff;
-    transition: background-color 0.5s, border 0.5s;
-
+    transition: all 0.5s;
+    z-index: -1;
 }
 
-.btntopd:hover {
+.headerd:hover {
     border: 1px #4169E1 solid;
     background-color: rgba(64, 104, 224, 0.151);
-    backdrop-filter: blur(25px);
     color: #fff;
 }
 .tag {
@@ -161,26 +162,6 @@ z-index: 999;
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #4169E1, 0 0 30px #4169E1, 0 0 40px #4169E1, 0 0 55px #4169E1, 0 0 75px #4169E1;
 }
 
-.works {
-    display: grid;
-    grid-template-columns: 120px 80vmin;
-    grid-template-rows: 40vmin;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
- 
-.mframe {
-    grid-area: 1 / 2 / 2 / 3;
-    border-radius: 25px;
-    backdrop-filter: blur(100px);
-}
-
-.tframe {
-    grid-area: 1 / 1 / 2 / 2;
-    border-radius: 25px;
-    backdrop-filter: blur(100px);
-}
-
 
   
 
@@ -203,9 +184,14 @@ z-index: 999;
  #erpa {
     background-color: #ffffff33;
     color: #FFF;
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     transition: -webkit-box-shadow 1s, box-shadow 1s, border 1s;
+ }
+ #erpa::before {
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(15px);
+    z-index: -1;
  }
  #erpa:hover {
     -webkit-box-shadow: 5px 5px 25px 0px #9244E1, -5px -5px 25px 0px #4169E1;
