@@ -137,8 +137,8 @@ margin-top: 2vmin;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-variation-settings: "wght" 250;
-    font-size: 8vw;
+    font-variation-settings: "wght" 350;
+    font-size: 6.4vw;
     transition: all 1s;
 }
 
