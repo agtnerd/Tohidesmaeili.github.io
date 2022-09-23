@@ -178,7 +178,7 @@ z-index: 999;
     background-size: 100% 50%;
     background-repeat: no-repeat;
     background-position: center;
-    height: 20vh;
+    height: 35vh;
 }
 
  #erpa {
@@ -186,13 +186,9 @@ z-index: 999;
     color: #FFF;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    transition: -webkit-box-shadow 1s, box-shadow 1s, border 1s;
+    transition: all 1s;
  }
- #erpa::before {
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    z-index: -1;
- }
+
  #erpa:hover {
     -webkit-box-shadow: 5px 5px 25px 0px #9244E1, -5px -5px 25px 0px #4169E1;
     box-shadow: 5px 5px 25px 0px #9244E1, -5px -5px 25px 0px #4169E1;
