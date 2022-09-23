@@ -14,8 +14,8 @@
     height: 5px;
   }
   ::-webkit-scrollbar-button {
-    width: 100px;
-    height: 100px;
+    width: 0px;
+    height: 0px;
   }
   ::-webkit-scrollbar-thumb {
     background: #4169e1;
@@ -29,7 +29,7 @@
   }
   ::-webkit-scrollbar-track {
     background: #000000;
-    border-radius: 100px;
+    border-radius: 0px;
   }
   ::-webkit-scrollbar-track:hover {
     background: #000000;
@@ -93,6 +93,12 @@ margin-top: 2vmin;
     align-items: center; 
     justify-content: center;
     text-align: center;
+}
+
+header {
+position: fixed;
+bottom: 2vh;
+z-index: 999;
 }
 
 .btntop {
@@ -195,8 +201,10 @@ margin-top: 2vmin;
 }
 
  #erpa {
-    background-color: #fff;
-    color: #000;
+    background-color: #ffffff33;
+    color: #FFF;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
     transition: -webkit-box-shadow 1s, box-shadow 1s, border 1s;
  }
  #erpa:hover {
