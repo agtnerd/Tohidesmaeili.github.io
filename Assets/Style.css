@@ -57,7 +57,7 @@ body {
     color: #fff;
     background-color: #000;
     background-image: url(svg/bg.svg);
-    background-size: 50vw;
+    background-size: 10vw;
     background-repeat: repeat;
 }
 h1 {
@@ -165,6 +165,63 @@ margin-top: 2vmin;
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #4169E1, 0 0 30px #4169E1, 0 0 40px #4169E1, 0 0 55px #4169E1, 0 0 75px #4169E1;
 }
 
+.work {
+  max-width: 960px;
+}
+
+.workdisc {
+  display: block;
+  margin: auto;
+  border-radius: 2vmin;
+  height: 34vmin;
+  width: 51vmin;
+  max-height: 480px;
+  max-width: 960px;
+  border: #4169e140 1px solid;
+  font-size: 3vmin;
+  font-variation-settings: "wght" 350;
+  line-height: 6vmin;
+  padding: 1vmin;
+  margin-top: -10vmin;
+  backdrop-filter: blur(8px);
+  background-color: #00000075;
+}
+
+.workdisca {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
+.workdisc h2 {
+  font-size: 5vmin;
+  font-variation-settings: "wght" 900;
+  background: #9244E1;
+  background: -webkit-linear-gradient(to right, #9244E1 30%, #4169E1 70%);
+  background: -moz-linear-gradient(to right, #9244E1 30%, #4169E1 70%);
+  background: linear-gradient(to right, #9244E1 30%, #4169E1 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.workimg {
+  display: block;
+  margin: auto;
+  border-radius: 2vmin;
+  height: 60vmin;
+  width: 90vmin;
+  max-height: 640px;
+  max-width: 960px;
+  border: #4169e140 0.1px solid;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.workimg.w1 {
+  background-image: url(../Assets/Untitled.png);
+}
+
 .works {
   display: grid;
   width: 95vw;
@@ -174,22 +231,20 @@ margin-top: 2vmin;
   border: #FFF 1px solid;
 }
 
+
+
 .llwork {
-  display: inline-block;
-  vertical-align: middle;
-  border-radius: 2vmin;
-  margin-right: -15vmin;
-  padding: 1vmin 1vmin 1vmin 1vmin;
+  display:table-column;
+  border-radius: 2vw;
+  margin-right: -15vw;
+  padding: 1vw 1vw 1vw 1vw;
   height: 25vw;
   width: 40vw;
-  max-height: 250px;
-  max-width: 400px;
   background-color: #90a4e02a;
   border: #ffffff40 1px solid;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
  font-size: 2vmin;
- direction: rtl;
 }
 
 .llwork h2 {
