@@ -57,6 +57,7 @@ body {
     color: #fff;
     background-color: #000;
     background-image: url(svg/bg.svg);
+    background-position: center;
     background-size: 10vw;
     background-repeat: repeat;
 }
@@ -71,9 +72,9 @@ line-height: normal;
     background-image: url(svg/flare.svg);
     background-size: 1000vw;
     background-repeat:no-repeat;
-    background-position: 50% 94%;
+    background-position: 50% 93%;
     overflow: hidden;
-    margin-bottom: -500vw;
+    margin-bottom: -450vw;
     padding-bottom: 400vw;
 }
 
@@ -88,7 +89,7 @@ margin-top: 2vmin;
     margin-top: 20vh;
     }
 .mt150vw {
-    margin-top: 150vw;
+    margin-top: 100vw ;
     }
 .mt100{
   margin-top: 100px;
@@ -127,17 +128,15 @@ margin-top: 2vmin;
     justify-content: center;
     border-radius: 100px;
     border: #00000000 0px solid;
-    background-color: rgba(0, 0, 0, 0.05);
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
-    color: #fff;
+    background-color: #4169e140;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     transition: all 0.5s;
-    z-index: -1;
 }
 
 .headerd:hover {
     border: 1px #4169E1 solid;
-    background-color: rgba(64, 104, 224, 0.151);
+    background-color: #4169e177;
 }
 .tag {
     background: #4169E1;
@@ -182,9 +181,10 @@ margin-top: 2vmin;
   font-variation-settings: "wght" 350;
   line-height: 6vmin;
   padding: 1vmin;
-  margin-top: -10vmin;
+  margin-top: -15vmin;
   backdrop-filter: blur(8px);
   background-color: #00000075;
+  overflow: hidden;
 }
 
 .workdisca {
@@ -222,65 +222,6 @@ margin-top: 2vmin;
   background-image: url(../Assets/Untitled.png);
 }
 
-.works {
-  display: grid;
-  width: 95vw;
-  max-height: 480px;
-  max-width: 960px;
-  grid-template-columns: 360px 700px;
-  border: #FFF 1px solid;
-}
-
-
-
-.llwork {
-  display:table-column;
-  border-radius: 2vw;
-  margin-right: -15vw;
-  padding: 1vw 1vw 1vw 1vw;
-  height: 25vw;
-  width: 40vw;
-  background-color: #90a4e02a;
-  border: #ffffff40 1px solid;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
- font-size: 2vmin;
-}
-
-.llwork h2 {
-  background: #9244E1;
-  background: -webkit-linear-gradient(to right, #9244E1 30%, #4169E1 70%);
-  background: -moz-linear-gradient(to right, #9244E1 30%, #4169E1 70%);
-  background: linear-gradient(to right, #9244E1 30%, #4169E1 70%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-
-.llwork p {
-  font-variation-settings: "wght" 350;
- padding: 2vmin 2vmin 2vmin 2vmin;
- line-height: 4vmin;
- color: #000;
-}
-
-.lrwork{
-  display: inline-block;
-  vertical-align: middle;
-  border-radius: 2vmin;
-  height: 45vw;
-  width: 65vw;
-  max-height: 480px;
-  max-width: 700px;
-  border: #00000040 1px solid;
-  overflow: hidden;
-  background-image: url(../Assets/Untitled.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 
 /* ID */
 #logo-bg {
@@ -301,15 +242,15 @@ margin-top: 2vmin;
 }
 
  #erpa {
-    background-color: #ffffff33;
-    color: #FFF;
+    background-color: #9244E140;
     border: #ffffff00 1px solid;
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     transition: all 1s;
  }
 
  #erpa:hover {
+  background-color: #9244E177;
     border: #4169e1 1px solid;
     -webkit-box-shadow: 5px 5px 25px 0px #9244E1, -5px -5px 25px 0px #4169E1;
     box-shadow: 5px 5px 25px 0px #9244E1, -5px -5px 25px 0px #4169E1;
@@ -317,14 +258,16 @@ margin-top: 2vmin;
  
 /* Responsive */
 
-@media screen and (min-width: 432px) {
+@media screen and (min-width: 480px) {
 
   body {  
-    font-size: 25px;
-  }
+    font-size: 3vmin; 
+    background-image: url(svg/bg2.svg);
+    background-size: 40px;
+}
   .tag {
-    font-size: 32px;
-  }
+    font-size: 3.8vmin; 
+}
   #logo {
     height: 200px;
   }
@@ -332,11 +275,17 @@ margin-top: 2vmin;
     height: 200px;
   }
   .bg1 {
-    background-size:2160px;
-    background-position: 50% 75%;
+    background-size: 3000px;
+    background-position: left 50% top -1250px;
+    margin-bottom: -4000px;
+    padding-bottom: 3800px;
   }
-  .bg2 {
-    background-size: 500vh;
+
+  .mt150vw {
+    margin-top: 480px;
+    }
+  .mt15vmin {
+    margin-top: 150px;
   }
   .mt2vw {
     margin-top: 10px;
@@ -357,74 +306,30 @@ margin-top: 2vmin;
   }
 
   .btntop {
-    width: 480px;
-    grid-template-columns: 150px 125px 50px 50px;
-    gap: 20px;
+    max-width: 360px;
   }
 
   .headerd {
-    height: 50px;
+    height: 55px;
   }
-  
-  .works {
-    display: grid;
-    width: 95vw;
-    max-height: 480px;
+    
+  .workdisc {
+    height: 25vmin;
+    width: 51vmin;
+    max-height: 320px;
     max-width: 960px;
-    grid-template-columns: 360px 700px;
-    border: #FFF 1px solid;
+    font-size: 2vmin;
+    line-height: 4vmin;
+    padding: 2vmin;
+    margin-top: -12vmin;
+    backdrop-filter: blur(15px);
   }
   
-  .llwork {
-    display: inline-block;
-    vertical-align: middle;
-    border-radius: 2vmin;
-    margin-right: -15vmin;
-    padding: 1vmin 1vmin 1vmin 1vmin;
-    height: 25vw;
-    width: 40vw;
-    max-height: 250px;
-    max-width: 400px;
-    background-color: #90a4e02a;
-    border: #ffffff40 1px solid;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-   font-size: 2vmin;
-   direction: rtl;
-  }
+  .workdisc h2 {
+    margin-top: 2vmin;
+    font-size: 4vmin;
+    line-height: 6vmin;
+}
   
-  .llwork h2 {
-    background: #9244E1;
-    background: -webkit-linear-gradient(to right, #9244E1 30%, #4169E1 70%);
-    background: -moz-linear-gradient(to right, #9244E1 30%, #4169E1 70%);
-    background: linear-gradient(to right, #9244E1 30%, #4169E1 70%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  
-  .llwork p {
-    font-variation-settings: "wght" 350;
-   padding: 2vmin 2vmin 2vmin 2vmin;
-   line-height: 4vmin;
-   color: #000;
-  }
-  
-  .lrwork{
-    display: inline-block;
-    vertical-align: middle;
-    border-radius: 2vmin;
-    height: 45vw;
-    width: 65vw;
-    max-height: 480px;
-    max-width: 700px;
-    border: #00000040 1px solid;
-    overflow: hidden;
-    background-image: url(../Assets/Untitled.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
 
 }
