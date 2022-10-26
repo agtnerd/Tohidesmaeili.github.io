@@ -1,0 +1,18 @@
+html {
+    scroll-behavior: smooth;
+    cursor:crosshair;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  body {  
+    background-color: #000;
+    margin: auto;
+  }
+
+img {
+    width: 100%;
+    margin: -0.5% 0;
+}
