@@ -37,7 +37,7 @@ body {
   margin-bottom: 30vmin;
 }
 
-.hdr h1 {
+.hdr>h1 {
   font-size: 8vmin;
   font-weight: 400;
   line-height: 2vmin;
@@ -50,7 +50,7 @@ body {
 }
 
 .hdr span {
-  font-size: 4.7vmin;
+  font-size: 4.25vmin;
   font-weight: 200;
   transition: all 2s;
   background: #4169E1;
@@ -70,7 +70,7 @@ body {
   align-items: center;
 }
 
-.scd h3 {
+.scd>h2 {
   font-size: 5vmin;
   font-weight: 100;
   text-align: right;
@@ -116,9 +116,9 @@ body {
   text-align: center;
 }
 
-.dsc h2 {
+.dsc>h3 {
   font-size: 5vmin;
-  font-weight: 200;
+  font-variation-settings: "wght" 200;
   line-height: 2vmin;
 }
 
@@ -146,9 +146,9 @@ body {
   font-size: 4vmin;
 }
 
-.mtp h3 {
+.mtp>h2 {
   vertical-align: middle;
-  font-weight: 100;
+  font-variation-settings: "wght" 200;
 }
 
 
@@ -158,16 +158,16 @@ body {
     margin-bottom: 250px;
   }
   
-  .hdr h1 {
+  .hdr>h1 {
     font-size: 50px;
     line-height: 10px;
   }
 
   .hdr span {
-    font-size: 29px;
+    font-size: 26.5px;
   }
   
-  .scd h3 {
+  .scd>h2 {
     font-size: 24px;
   }
   
@@ -193,7 +193,7 @@ body {
     text-align: right;
   }
   
-.dsc h2 {
+.dsc>h3 {
   font-size: 24px;
   line-height: 25px;
 }
