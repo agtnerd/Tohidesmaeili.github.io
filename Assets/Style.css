@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('Fonts/fonts/webfonts/Vazirmatn[wght].woff2') format('woff2 supports variations'),
+       url('Fonts/fonts/webfonts/Vazirmatn[wght].woff2') format('woff2-variations'),
+       url('Fonts/fonts/variable/Vazirmatn[wght].ttf') format('truetype-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   scroll-behavior: smooth;
   cursor:crosshair;
@@ -29,7 +39,7 @@ body {
 
 .hdr h1 {
   font-size: 8vmin;
-  font-weight: 200;
+  font-weight: 400;
   line-height: 2vmin;
   transition: all 2s;
 }
