@@ -50,7 +50,7 @@ body {
 }
 
 .hdr span {
-  font-size: 4.25vmin;
+  font-size: 4.1vmin;
   font-weight: 200;
   transition: all 2s;
   background: #4169E1;
@@ -164,7 +164,7 @@ body {
   }
 
   .hdr span {
-    font-size: 26.5px;
+    font-size: 26px;
   }
   
   .scd>h2 {
